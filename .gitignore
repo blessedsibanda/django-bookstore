@@ -3,3 +3,6 @@ db.sqlite3
 Pipfile
 Pipfile.lock
 venv/
+__pycache__/
+venv37/
+media/
