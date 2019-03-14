@@ -28,6 +28,6 @@ def generate_thumbnail(sender, instance, **kwargs):
     instance.thumbnail.save(
         instance.image.name,
         ContentFile(temp_thumb.read()),
-        save=False
+        save=False,
     )
     temp_thumb.close()
