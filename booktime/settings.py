@@ -173,3 +173,6 @@ else:
 
 # Custom User model
 AUTH_USER_MODEL = 'main.User'
+
+# Login Redirect
+LOGIN_REDIRECT_URL = '/'
