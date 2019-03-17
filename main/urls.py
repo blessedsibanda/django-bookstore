@@ -25,6 +25,7 @@ urlpatterns = [
        views.AddressDeleteView.as_view(),
        name='address_delete',
     ),
+    path('add_to_basket/', views.add_to_basket, name='add_to_basket'),
     path('about-us/', 
         TemplateView.as_view(template_name='about_us.html'),
         name="about_us"),
