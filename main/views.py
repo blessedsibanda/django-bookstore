@@ -24,7 +24,7 @@ def add_to_basket(request):
         else:
             user = None
         basket = models.Basket.objects.create(user=user)
-        request.sesion['basket_id'] = basket.id
+        request.session['basket_id'] = basket.id
     basketline, created = models.BasketLine.objects.get_or_create(basket=basket, product=product)
     if not created:
         basketline.quantity += 1

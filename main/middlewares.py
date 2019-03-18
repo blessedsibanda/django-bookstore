@@ -10,4 +10,5 @@ def basket_middleware(get_response):
         else:
             request.basket = None
         response = get_response(request)
+        return response
     return middleware
