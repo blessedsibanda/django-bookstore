@@ -1,5 +1,6 @@
 import logging
 from django import forms
+from django.forms import inlineformset_factory
 from django.contrib.auth.forms import (
     UserCreationForm as DjangoUserCreationForm
 )
@@ -11,6 +12,13 @@ from . import models
 
 logger = logging.getLogger(__name__)
 
+
+BasketLineFormSet = inlineformset_factory(
+    models.Basket,
+    models.BasketLine,
+    fields=('quantity',),
+    extra=0,
+)
 
 class AuthenticationForm(forms.Form):
     email = forms.EmailField()
