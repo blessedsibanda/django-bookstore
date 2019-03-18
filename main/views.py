@@ -39,6 +39,7 @@ class AddressCreateView(LoginRequiredMixin, CreateView):
 
 class AddressUpdateView(LoginRequiredMixin, UpdateView):
     model = models.Address
+    template_name = 'main/address_update.html'
     fields = [
         "name",
         "address1",

@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1>List of your addresses:</h1>
-    {% for address in address %}
+    {% for address in object_list %}
         <p>
             {{ address.name }} <br>
             {{ address.address1 }} <br>
