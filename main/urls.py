@@ -9,6 +9,7 @@ urlpatterns = [
     path('order/address_select/',
          views.AddressSelectionView.as_view(), name='address_select'),
     path('basket/', views.manage_basket, name='basket'),
+    path('order-dashboard/', views.OrderView.as_view(),name='order_dashboard'),
     path(
         'address/',
         views.AddressListView.as_view(),
