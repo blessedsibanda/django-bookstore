@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
+    'webpack_loader',
 ]
 
 MIDDLEWARE = [
@@ -177,3 +178,11 @@ AUTH_USER_MODEL = 'main.User'
 
 # Login Redirect
 LOGIN_REDIRECT_URL = '/'
+
+# webpack loader
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'bundles/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
+    }
+}
