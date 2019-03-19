@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django_tables2',
     'widget_tweaks',
     'rest_framework',
+    "django_filters",
 
     # custom apps
     'main.apps.MainConfig',
