@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'debug_toolbar',
     'django_tables2',
+    'widget_tweaks',
 
     # custom apps
     'main.apps.MainConfig',
